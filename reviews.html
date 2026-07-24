@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse all our in-depth tech gadget reviews. Find honest opinions on headphones, laptops, accessories, and more at TechCense." />
+    <title>All Reviews - TechCense</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><i class="fas fa-brain"></i> TechCense</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>All <span class="highlight">Reviews</span></h1>
+            <p>Every gadget we've tested, ranked, and reviewed. Filter by category or browse the latest.</p>
+        </div>
+    </section>
+
+    <!-- Filter Tags -->
+    <section class="container">
+        <div class="filter-tags">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="audio">Audio</button>
+            <button class="filter-btn" data-filter="laptops">Laptops</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+            <button class="filter-btn" data-filter="smart-home">Smart Home</button>
+            <button class="filter-btn" data-filter="productivity">Productivity</button>
+        </div>
+    </section>
+
+    <section class="container reviews-list">
+        <div class="card-grid">
+
+            <!-- Full Review 1 -->
+            <div class="card" data-category="audio">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <i class="fas fa-headphones fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Audio</span>
+                    <h3>Sony WH-1000XM6 Review: Still the King of Noise Canceling?</h3>
+                    <p class="meta">Updated July 2026</p>
+                    <p>The WH-1000XM6 refines an already-great formula. Better battery, improved ANC, and a lighter build.</p>
+                    <div class="rating">★★★★★</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Best-in-class ANC</li>
+                        <li><i class="fas fa-plus pros"></i> 40-hour battery</li>
+                        <li><i class="fas fa-minus cons"></i> Same design as XM5</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Full Review 2 -->
+            <div class="card" data-category="accessories">
+                <div class="card-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                    <i class="fas fa-keyboard fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Accessories</span>
+                    <h3>Logitech MX Mechanical Mini Review</h3>
+                    <p class="meta">Updated June 2026</p>
+                    <p>A compact mechanical keyboard built for productivity. Tactile switches, wireless, and multi-device.</p>
+                    <div class="rating">★★★★☆</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Great typing feel</li>
+                        <li><i class="fas fa-plus pros"></i> USB-C + Bluetooth</li>
+                        <li><i class="fas fa-minus cons"></i> Expensive</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Full Review 3 -->
+            <div class="card" data-category="laptops">
+                <div class="card-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                    <i class="fas fa-laptop fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Laptops</span>
+                    <h3>MacBook Air M4 Review: Apple's Best Value Laptop?</h3>
+                    <p class="meta">Updated July 2026</p>
+                    <p>The M4 chip brings serious power to the Air. Fanless, thin, and now even faster.</p>
+                    <div class="rating">★★★★★</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Incredible performance</li>
+                        <li><i class="fas fa-plus pros"></i> 18-hour battery</li>
+                        <li><i class="fas fa-minus cons"></i> Only 2 Thunderbolt ports</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Full Review 4 -->
+            <div class="card" data-category="smart-home">
+                <div class="card-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+                    <i class="fas fa-lightbulb fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Smart Home</span>
+                    <h3>Philips Hue 2026 Lineup: Worth the Upgrade?</h3>
+                    <p class="meta">Updated July 2026</p>
+                    <p>Brighter bulbs, better sensors, and Matter support. We tested the entire new range.</p>
+                    <div class="rating">★★★★☆</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Matter compatible</li>
+                        <li><i class="fas fa-plus pros"></i> Brighter than ever</li>
+                        <li><i class="fas fa-minus cons"></i> Still pricey</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Full Review 5 -->
+            <div class="card" data-category="productivity">
+                <div class="card-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+                    <i class="fas fa-tablet-alt fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Productivity</span>
+                    <h3>Remarkable Paper Pro vs. Kindle Scribe: Best Writing Tablet</h3>
+                    <p class="meta">Updated June 2026</p>
+                    <p>Two note-taking giants go head-to-head. Which one replaces your notebook?</p>
+                    <div class="rating">★★★★☆</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Great writing feel</li>
+                        <li><i class="fas fa-plus pros"></i> Long battery life</li>
+                        <li><i class="fas fa-minus cons"></i> Limited app ecosystem</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Full Review 6 -->
+            <div class="card" data-category="accessories">
+                <div class="card-img" style="background: linear-gradient(135deg, #89f7fe, #66a6ff);">
+                    <i class="fas fa-mouse fa-3x"></i>
+                </div>
+                <div class="card-body">
+                    <span class="tag">Accessories</span>
+                    <h3>Logitech MX Master 3S: Still the Best Mouse in 2026?</h3>
+                    <p class="meta">Updated May 2026</p>
+                    <p>Quiet clicks, ergonomic design, and MagSpeed scroll. Does anything top it?</p>
+                    <div class="rating">★★★★★</div>
+                    <ul class="pros-cons">
+                        <li><i class="fas fa-plus pros"></i> Ultra-comfortable</li>
+                        <li><i class="fas fa-plus pros"></i> 70-day battery</li>
+                        <li><i class="fas fa-minus cons"></i> Heavy for travel</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Full Review <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; 2026 TechCense. All rights reserved.</p>
+            <p class="small">Some links on this site are affiliate links. We may earn a commission at no extra cost to you. <a href="about.html">Learn more</a>.</p>
+        </div>
+    </footer>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1ffac7d099eb16e',t:'MTc4NDg2MjAxOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+; Domain: techcense.shop
+; Exported (y-m-d hh:mm:ss): 2026-07-23 19:51:06
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+$ORIGIN techcense.shop.
+
+; SOA Record
+@	3600	 IN 	SOA	ns07.domaincontrol.com.	dns.jomax.net. (
+					2026021700
+					28800
+					7200
+					604800
+					3600
+					) 
+
+; A Record
+@	3600	 IN 	A	23.227.38.32
+
+; TXT Record
+@	3600	 IN 	TXT	"v=spf1 include:dc-8e814c8572._spfm.techcense.shop ~all"
+dc-8e814c8572._spfm	3600	 IN 	TXT	"v=spf1 include:zohomail.com ~all"
+zmail._domainkey	600	 IN 	TXT	"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOCjMbLNminecPplLL/re37FzjZffQNfjee4MnTqY/kxIWRbg6SMipSc2ImICHmoFwDvkEIvZeMedUrvriybfZkbjQnOPhRDjDGvf1eXL0PWRJuTnNSoAvW6hzhpFGiXvcGJatj3REQnLvcTO+yE5Mxy94TR8DYJEnGISFLmZQWwIDAQAB"
+_dmarc	3600	 IN 	TXT	"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"
+
+; CNAME Record
+89176111-8e3a-4f40-88de-170b319de724	3600	 IN 	CNAME	dns-verification.shopify.com.
+account	3600	 IN 	CNAME	shops.myshopify.com.
+pay	3600	 IN 	CNAME	paylinks.commerce.godaddy.com.
+www	3600	 IN 	CNAME	shops.myshopify.com.
+zb12149861	600	 IN 	CNAME	zmverify.zoho.com.
+_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
+
+; NS Record
+@	3600	 IN 	NS	ns07.domaincontrol.com.
+@	3600	 IN 	NS	ns08.domaincontrol.com.
+
+; MX Record
+@	600	 IN 	MX	10	mx.zoho.com.
+@	600	 IN 	MX	20	mx2.zoho.com.
+@	600	 IN 	MX	50	mx3.zoho.com.
+

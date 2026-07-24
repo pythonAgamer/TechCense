@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="[PRODUCT NAME] review - honest, in-depth testing and verdict from TechCense." />
+    <title>[Product Name] Review - TechCense</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        /* Additional review page styles */
+        .review-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+            align-items: center;
+        }
+
+        .review-img-placeholder {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: var(--radius);
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 4rem;
+        }
+
+        .review-verdict {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .review-verdict h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .verdict-score {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .verdict-label {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        .buy-button-container {
+            margin: 20px 0;
+        }
+
+        .btn-buy {
+            background: #22c55e;
+            color: #fff;
+            padding: 14px 32px;
+            font-size: 1.05rem;
+        }
+
+        .btn-buy:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .specs-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--text-muted);
+            width: 40%;
+        }
+
+        .review-section {
+            margin: 32px 0;
+        }
+
+        .review-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .review-section p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .pros-cons-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .pros-box, .cons-box {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .pros-box h3 { color: var(--green); }
+        .cons-box h3 { color: var(--red); }
+
+        .pros-box ul, .cons-box ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .pros-box ul li { margin-bottom: 8px; color: var(--text-muted); }
+        .cons-box ul li { margin-bottom: 8px; color: var(--text-muted); }
+
+        .pros-box ul li i { color: var(--green); margin-right: 8px; }
+        .cons-box ul li i { color: var(--red); margin-right: 8px; }
+
+        .alternative-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .alt-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .alt-card h4 { margin-bottom: 4px; }
+        .alt-card p { font-size: 0.85rem; color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            .review-header {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .pros-cons-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><i class="fas fa-brain"></i> TechCense</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="container">
+        <p class="small" style="margin-top: 20px;">
+            <a href="index.html">Home</a> / <a href="reviews.html">Reviews</a> / [Category]
+        </p>
+    </div>
+
+    <!-- REVIEW HEADER -->
+    <section class="container review-header">
+        <div class="review-img-placeholder">
+            <i class="fas fa-camera"></i>
+        </div>
+        <div>
+            <span class="tag">[Category]</span>
+            <h1 style="font-size: 2rem; margin: 12px 0;">[Product Name] Review: [Tagline]</h1>
+            <p class="meta">Updated July 2026 · By TechCense Team</p>
+            <p style="color: var(--text-muted); margin: 16px 0;">Quick summary of what this product is and who it's for.</p>
+            <div class="rating" style="font-size: 1.4rem;">★★★★★</div>
+        </div>
+    </section>
+
+    <!-- VERDICT & BUY -->
+    <section class="container review-verdict">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div>
+                <h2>Our Verdict</h2>
+                <div class="verdict-score">9.2/10</div>
+                <div class="verdict-label">Outstanding · <span style="color: var(--green);">Buy It</span></div>
+            </div>
+            <div class="buy-button-container">
+                <a href="#" class="btn btn-buy"><i class="fas fa-shopping-cart"></i> Check Price on Amazon</a>
+                <p class="small" style="margin-top: 8px; text-align: center;">We earn a commission if you buy, at no extra cost</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECS -->
+    <section class="container review-section">
+        <h2>Specifications</h2>
+        <table class="specs-table">
+            <tr><td>Price</td><td>$[price]</td></tr>
+            <tr><td>Weight</td><td>[weight]</td></tr>
+            <tr><td>Battery Life</td><td>[battery]</td></tr>
+            <tr><td>Connectivity</td><td>[connectivity]</td></tr>
+            <tr><td>Dimensions</td><td>[dimensions]</td></tr>
+            <tr><td>Colors</td><td>[colors]</td></tr>
+        </table>
+    </section>
+
+    <!-- PROS & CONS -->
+    <section class="container">
+        <div class="pros-cons-box">
+            <div class="pros-box">
+                <h3><i class="fas fa-thumbs-up"></i> Pros</h3>
+                <ul>
+                    <li><i class="fas fa-plus"></i> [Pro 1]</li>
+                    <li><i class="fas fa-plus"></i> [Pro 2]</li>
+                    <li><i class="fas fa-plus"></i> [Pro 3]</li>
+                    <li><i class="fas fa-plus"></i> [Pro 4]</li>
+                </ul>
+            </div>
+            <div class="cons-box">
+                <h3><i class="fas fa-thumbs-down"></i> Cons</h3>
+                <ul>
+                    <li><i class="fas fa-minus"></i> [Con 1]</li>
+                    <li><i class="fas fa-minus"></i> [Con 2]</li>
+                    <li><i class="fas fa-minus"></i> [Con 3]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED REVIEW SECTIONS -->
+    <section class="container review-section">
+        <h2>Design & Build Quality</h2>
+        <p>Write a detailed paragraph about the design, materials, build quality, and first impressions. Talk about how it feels in the hand, the materials used, portability, and aesthetics.</p>
+        <p>Include specific details like dimensions, weight comparisons, and port placement. Mention any standout design choices and whether they work well in practice.</p>
+    </section>
+
+    <section class="container review-section">
+        <h2>Performance & Daily Use</h2>
+        <p>Describe real-world performance. How fast is it? Any lag or stutter? How does it handle multitasking? Include specific use cases like working, gaming, media consumption, etc.</p>
+        <p>Mention any benchmarks or speed tests if applicable. Compare against previous models or competitors.</p>
+    </section>
+
+    <section class="container review-section">
+        <h2>Battery Life</h2>
+        <p>Detail your battery testing methodology. How many hours did you get? Under what conditions? How fast does it charge? Include comparisons to the manufacturer's claims.</p>
+    </section>
+
+    <section class="container review-section">
+        <h2>Software & Features</h2>
+        <p>Cover the software experience. Any bloatware? Useful features? Customization options? How are updates handled?</p>
+    </section>
+
+    <!-- ALTERNATIVES -->
+    <section class="container review-section">
+        <h2>Alternatives to Consider</h2>
+        <div class="alternative-grid">
+            <div class="alt-card">
+                <h4>[Alternative 1]</h4>
+                <p>$[price]</p>
+                <div class="rating" style="font-size: 0.9rem;">★★★★☆</div>
+                <p class="small">Good if you need [reason]</p>
+            </div>
+            <div class="alt-card">
+                <h4>[Alternative 2]</h4>
+                <p>$[price]</p>
+                <div class="rating" style="font-size: 0.9rem;">★★★★★</div>
+                <p class="small">Best overall alternative</p>
+            </div>
+            <div class="alt-card">
+                <h4>[Alternative 3]</h4>
+                <p>$[price]</p>
+                <div class="rating" style="font-size: 0.9rem;">★★★☆☆</div>
+                <p class="small">Budget pick</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL VERDICT -->
+    <section class="container review-verdict">
+        <h2>Final Verdict</h2>
+        <p style="color: var(--text-muted); margin: 12px 0;">Summarize your overall thoughts. Who should buy this? Who should skip it? Be honest and direct.</p>
+        <p style="color: var(--text-muted);"><strong>Score:</strong> 9.2/10</p>
+        <div style="margin-top: 16px;">
+            <a href="#" class="btn btn-buy"><i class="fas fa-shopping-cart"></i> Check Latest Price</a>
+        </div>
+        <p class="small" style="margin-top: 12px;">As an Amazon Associate I earn from qualifying purchases.</p>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; 2026 TechCense. All rights reserved.</p>
+            <p class="small">Some links on this site are affiliate links. We may earn a commission at no extra cost to you. <a href="about.html">Learn more</a>.</p>
+        </div>
+    </footer>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1ffac71c8f8b16e',t:'MTc4NDg2MjAxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+</body>
+</html>
